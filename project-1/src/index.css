@@ -1,68 +1,114 @@
-/*:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Futura;
+color:white;
 }
-a:hover {
-  color: #535bf2;
+html, body{
+height: 100%;
+width:100%;
 }
 
-body {
-  margin: 0;
+#main{
+height: 100%;
+width:100%;
+background-color:black ;
+}
+
+#navbar{
+  height: 70px;
+  width: 100%;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#leftlogo img{
+  height: 60px;
+  margin: 2px;
+  filter:drop-shadow(1px 1px 10px #fff);
+}
+#center{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  height: 70px;
+  width: auto;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+#right{
+  margin-right: 2%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+#loginbut{
+  padding: 12px 20px;
+  border: #000 solid 4px;
+  border-radius: 20px 2px 20px 20px;
+  color: #000;
+  text-transform: uppercase;
+  box-shadow:4px 4px 10px #fff;
+}
+#page1{
+  min-height: 105vh;
+  position:relative;
+  width: 100%;
+  padding: 0 1vw;
+  padding-top: 20vh;
+  align-items: end;
+}
+#page1 h1{
+  font-size: 28vh;
+  text-transform:uppercase;
+  font-family: Futura;
+  line-height: 30vh;
+  letter-spacing: -2px;
+  color:#fff
+  
+}
+#video-container{
+  /*background-color: blue;*/
   min-height: 100vh;
+  position: relative;
 }
+#video-container video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+#video-container #play{
+  z-index: 2;
+  padding: 3vw 2.2vw;
+  background-color: black;
+  color: #fff;
+  font-family: futura;
+  height: fit-content;
+  width: fit-content;
+  position:fixed;
+  border-radius: 50%;
+  font-size: 2vw;
+  text-transform: uppercase;
+  opacity:50% ;
+}
+@media (max-width:600px) {
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}*/
+  #page1 h1{
+  font-size: 14vh;
+  text-transform:uppercase;
+  font-family: Futura;
+  line-height: 13vh;
+  letter-spacing: -5px;}}
